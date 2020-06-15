@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+</head>
+<body>
+    <script>
+        let myArray = new Map(); // створюємо новий асоціативний масив
+        myArray.set('Valeria', 'Gonchar'); // додаємо пари ключ: значення до масиву
+        myArray.set('Anton', 'Resenchuk'); 
+        myArray.set('Sergii', 'Demchenko');
+        myArray.set('Maksim', 'Sinichuk');
+
+        for (let pair of myArray.entries()){ // за допомого циклу for..of виводимо пари с консоль
+            console.log(`Ім'я = ${pair[0]}: прізвище = ${pair[1]}`);
+        }
+
+    </script>
+</body>
+</html>
